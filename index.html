@@ -5,23 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Store - Cadastro de Pet</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" crossorigin="anonymous">
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="header-content">
-                <section class="header-image">
+            <section class="form-section header-form" >
+                <div class="header-content">
+                    <section class="header-image">
 
-                </section>
-            <h1>🐾 Pet Shop Amigo Fiel</h1>
-           </div>
-            <p class="subtitle">Cadastre seu pet e agende nossos serviços</p>
+                    </section>
+                <h1>🐾 Pet Shop Amigo Fiel</h1>
+                </div>
+                <p class="subtitle">Cadastre seu pet e agende nossos serviços</p>
+            </section>
         </header>
 
         <main>
             <form class="pet-form">
-                <section class="form-section">
-                    <h2>Dados do Tutor</h2>
+                <section class="form-section form-section-top">
+                    <h2> <i class="fa-regular fa-address-card"></i> Dados do Tutor</h2>
                     
                     <div class="form-group">
                         <label for="nome-tutor">Nome Completo</label>
@@ -40,7 +43,7 @@
                 </section>
 
                 <section class="form-section">
-                    <h2>Dados do Pet</h2>
+                    <h2> <i class="fa-solid fa-paw"></i> Dados do Pet</h2>
                     
                     <div class="form-group">
                         <label for="nome-pet">Nome do Pet</label>
@@ -77,24 +80,24 @@
                     </div>
                 </section>
 
-                <section class="form-section">
+                <section class="form-section form-section-bottom">
                     <h2>Serviços Desejados</h2>
                     
                     <div class="form-group checkbox-group">
                         <label>
-                            <input type="checkbox" name="servico" value="banho">
+                            <input type="checkbox" name="servico" value="banho"> 🛁
                             Banho
                         </label>
                         <label>
-                            <input type="checkbox" name="servico" value="tosa">
+                            <input type="checkbox" name="servico" value="tosa"> ✂️
                             Tosa
                         </label>
                         <label>
-                            <input type="checkbox" name="servico" value="consulta">
+                            <input type="checkbox" name="servico" value="consulta"> 🩺
                             Consulta Veterinária
                         </label>
                         <label>
-                            <input type="checkbox" name="servico" value="vacinacao">
+                            <input type="checkbox" name="servico" value="vacinacao"> 💉
                             Vacinação
                         </label>
                     </div>
@@ -103,19 +106,19 @@
                         <label for="observacoes">Observações</label>
                         <textarea id="observacoes" name="observacoes" rows="4" placeholder="Alguma informação adicional sobre seu pet?"></textarea>
                     </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Cadastrar Pet</button>
+                        <button type="reset" class="btn btn-secondary">Limpar Formulário</button>
+                    </div>
                 </section>
 
-                <div class="form-actions">
-                    <button type="submit" class="btn btn-primary">Cadastrar Pet</button>
-                    <button type="reset" class="btn btn-secondary">Limpar Formulário</button>
-                </div>
+
             </form>
         </main>
-
-        <footer>
-            <p>&copy; 2025 Pet Shop Amigo Fiel - Todos os direitos reservados</p>
-        </footer>
     </div>
+    <footer>
+        <p>&copy; 2025 Pet Shop Amigo Fiel - Todos os direitos reservados</p>
+    </footer>
 </body>
 </html>
 
