@@ -1,0 +1,101 @@
+/* Fundo fixo */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../capaAnimais.jpeg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px);
+    background-color: rgba(0,0,0,0.4);
+    background-blend-mode: darken;
+    z-index: -1;
+}
+
+/* Layout base */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container central */
+.main-content {
+    flex: 1; /* ocupa o espaço entre header e footer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirm-container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 24px;
+    padding: 3rem;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    max-width: 600px;
+    width: 90%;
+}
+
+.confirm-container h1 {
+    font-size: 2rem;
+    color: #4C191B;
+    margin-bottom: 1rem;
+}
+
+.confirm-container p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.confirm-icon {
+    font-size: 4rem;
+    color: tomato;
+    margin-bottom: 1rem;
+}
+
+.btn-voltar {
+    background-color: tomato;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-voltar:hover {
+    background-color: black;
+}
+
+/* Footer fixo ao fim da tela */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+@media (max-width: 480px) {
+    .confirm-container {
+        padding: 2rem;
+    }
+    .confirm-container h1 {
+        font-size: 1.5rem;
+    }
+    .confirm-container p {
+        font-size: 1rem;
+    }
+}
+

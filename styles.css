@@ -151,10 +151,13 @@ main {
     cursor: pointer;
     padding: 16px;
     background: white;
-    border: 2px solid #4C191B;
+    border: 2px solid transparent; 
     border-radius: 12px;
-    
-    
+    transition: border-color 0.3s ease;
+}
+
+.checkbox-group label:hover {
+    border-color: #4C191B; /* Marrom ao passar o mouse */
 }
 
 .checkbox-group input[type="checkbox"] {

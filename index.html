@@ -85,19 +85,19 @@
                     
                     <div class="form-group checkbox-group">
                         <label>
-                            <input type="checkbox" name="servico" value="banho"> 🛁
+                            <input type="checkbox" name="servico" value="banho" class="servico-btn"> 🛁
                             Banho
                         </label>
                         <label>
-                            <input type="checkbox" name="servico" value="tosa"> ✂️
+                            <input type="checkbox" name="servico" value="tosa" class="servico-btn"> ✂️
                             Tosa
                         </label>
                         <label>
-                            <input type="checkbox" name="servico" value="consulta"> 🩺
+                            <input type="checkbox" name="servico" value="consulta" class="servico-btn"> 🩺
                             Consulta Veterinária
                         </label>
                         <label>
-                            <input type="checkbox" name="servico" value="vacinacao"> 💉
+                            <input type="checkbox" name="servico" value="vacinacao" class="servico-btn"> 💉
                             Vacinação
                         </label>
                     </div>
@@ -107,7 +107,7 @@
                         <textarea id="observacoes" name="observacoes" rows="4" placeholder="Alguma informação adicional sobre seu pet?"></textarea>
                     </div>
                     <div class="form-actions">
-                        <button type="submit" class="btn btn-primary">Cadastrar Pet</button>
+                        <button type="submit" class="btn btn-primary" onclick="cadastrarPet()">Cadastrar Pet</button>
                         <button type="reset" class="btn btn-secondary">Limpar Formulário</button>
                     </div>
                 </section>
@@ -119,6 +119,8 @@
     <footer>
         <p>&copy; 2025 Pet Shop Amigo Fiel - Todos os direitos reservados</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
 
